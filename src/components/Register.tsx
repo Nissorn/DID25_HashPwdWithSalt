@@ -64,8 +64,8 @@ const Register: React.FC<RegisterProps> = ({ onSwitchToLogin, onRegisterSuccess 
         throw new Error('กรุณากรอกรหัสผ่าน');
       }
 
-      if (password.length < 6) {
-        throw new Error('รหัสผ่านต้องมีอย่างน้อย 6 ตัวอักษร');
+      if (password.length < 12) {
+        throw new Error('รหัสผ่านต้องมีอย่างน้อย 12 ตัวอักษร (เพื่อความปลอดภัย)');
       }
 
       if (password !== confirmPassword) {
@@ -147,7 +147,7 @@ const Register: React.FC<RegisterProps> = ({ onSwitchToLogin, onRegisterSuccess 
                 type={showPassword ? 'text' : 'password'}
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                placeholder="อย่างน้อย 6 ตัวอักษร"
+              placeholder="อย่างน้อย 12 ตัวอักษร (A-Z, a-z, 0-9)"
                 disabled={isLoading}
                 autoComplete="new-password"
               />
