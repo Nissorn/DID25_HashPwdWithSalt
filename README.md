@@ -45,7 +45,7 @@
 
 ## 📦 โครงสร้างโปรเจกต์
 
-\`\`\`
+```text
 src/
 ├── services/
 │   ├── hash.ts          # ระบบ Hash Password (MD5, SHA-1, SHA-256, SHA-512, bcrypt)
@@ -57,7 +57,7 @@ src/
 ├── App.css              # Minimal Design System
 ├── index.tsx            # Entry Point
 └── index.css            # Global Styles
-\`\`\`
+```
 
 ## 🚀 การติดตั้งและรันโปรเจกต์
 
